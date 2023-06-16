@@ -1,0 +1,31 @@
+////////////////////////////
+////// ITEM DROP RATE //////
+////////////////////////////
+
+// ITEM ID|SEED PLANT|BLOCK DROP|SEED DROP|SEED BREAK
+// NIL - No drop rate
+
+// General equation
+
+// y = x * ( BLOCK DROP / SEED PLANT ) -> x = SEED PLANT, y = BLOCK DROP # Calculate number of y blocks dropped from x seeds planted
+// y = x * ( SEED DROP / SEED PLANT ) -> x = SEED PLANT, y = SEED DROP # Calculate number of y seeds dropped from x seeds planted
+// y = x * ( SEED BREAK / SEED PLANT ) -> x = SEED PLANT, y = SEED BREAK # Calculate  number of y seeds dropped from breaking number of blocks harvested from x seeds planted
+// y = x * ( ( SEED BREAK + SEED DROP ) / SEED PLANT ) -> x = SEED PLANT, y = SEED YIELD # Calculate total number of y seeds collected from farming x seeds
+
+// Dirt
+2|200|1204|80|320
+
+// Lava
+4|200|1206|72|340
+
+// Rock
+10|200|921|59|264
+
+// Grass [Dirt + Rock]
+16|200|1146|65|361
+
+// Wood Block [Dirt + Lava]
+100|136|701|40|166
+
+// Wooden Platform [Grass + Wood Block]
+102|200|774|51|216
